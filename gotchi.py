@@ -31,10 +31,10 @@ def main():
     objects.append(AttentionGauge([40,40], (25,50,25), 50))
     objects.append(FoodGauge([40,110], (50,25,25), 50))
     objects.append(BasketBallButton([700,500], [100,40], "BBall"))
-    game_increment = time.clock()
+    game_increment = time.process_time()
     runtime = 0
     while running:
-        runtime = int(time.clock() - game_increment)
+        runtime = int(time.process_time() - game_increment)
         #logic process
         data = [pygame.mouse.get_pos(), isPressed, screen, objects, runtime, fps]
         pygame.display.set_caption(data[3][1].name)

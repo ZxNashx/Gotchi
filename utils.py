@@ -391,7 +391,7 @@ class Environment():
     def __init__(self):
         self.cMin = dt.now().minute
         self.timeStep = 0
-        self.image = pygame.image.load("de.jpg")
+        #self.image = pygame.image.load("de.jpg")
         self.light = 0
     def getType(self):
         return "Environment"
